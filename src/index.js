@@ -42,7 +42,7 @@ export default class C3Chart extends React.Component {
     this.renderChart();
   }
 
-  componentWillUmount() {
+  componentWillUnmount() {
     if (this.chart) {
       try {
         this.chart = this.chart.destroy();
